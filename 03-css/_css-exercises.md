@@ -25,21 +25,53 @@ Calculate the specificity of the rules below.
 
 ```css
 nav .list-item > a {
+    /* 
+    elements: nav, a - 2
+    classes: .list-item - 1
+    specificity: 0, 0, 1, 2
+    */
 }
 
 #main::first-letter {
+    /* 
+    elements: #main - 1
+    classes: ::first-letter - 1 
+    specificity: 0, 1, 0, 1
+    */
 }
 
 input[type] {
+    /* 
+    elements: input - 1
+    classes: [type] - 1
+    specificity: 0, 0, 1, 1
+    */
 }
 
 section .main::first-line {
+    /* 
+    elements: section - 1
+    classes: .main - 1
+    specificity: 0, 0, 1, 2
+    */
 }
 
 nav ul.menu li#first a:not([class='visited']) {
+    /* 
+    elements: nav, ul, li, a - 4
+    classes: .menu - 1
+    id: #first - 1
+    pseudo-class: :not([class='visited']) - 1
+    attributes: [class='visited'] - 1
+    specificity: 0, 1, 3, 4
+    */
 }
 
 div ol li ul li ol li ul li a {
+    /* 
+    elements: div, ol, li, ul, li, ol, li, ul, li, a - 10
+    specificity: 0, 0, 0, 10
+    */
 }
 ```
 

@@ -1,26 +1,58 @@
 :root {
+  --darkgolden: #b8860b;
   --darkviolet: #9400d3;
+  --purple: #800080;
   --maroon: #800000;
-  --darkgolden: #8f6805;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: calc(100vh - 120px); /* Full viewport height minus the heights of fixed and absolute elements */
+  margin-top: 80px; /* Pushes .main down slightly to avoid overlap */
 }
 
 .box {
-  padding: 10px;
-  color: var(--white);
+  padding: 20px; /* Adds padding inside each box */
+  color: white;
+}
+
+.static,
+.relative {
+  flex-grow: 1;
+  
 }
 
 .static {
   background-color: var(--darkviolet);
+  width: 300px;
+  height: 400px;
+  margin-right: 10px; /* Adds space between static and relative */
 }
 
 .relative {
   background-color: var(--purple);
+  width: 300px;
+  height: 400px;
 }
 
 .absolute {
   background-color: var(--maroon);
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  top: 0; /* Positions the element at the top */
 }
 
 .fixed {
   background-color: var(--darkgolden);
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  bottom: 0; /* Positions the element at the bottom */
 }
