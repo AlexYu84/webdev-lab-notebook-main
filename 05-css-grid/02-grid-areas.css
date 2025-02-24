@@ -1,9 +1,28 @@
-.header {
+/* grid exercise 1 */
+
+/* .header {
+  text-align: left;
   grid-area: header;
 }
 
 .article {
+  text-align: left;
   grid-area: article;
+}
+
+.aside{
+  text-align: left;
+  grid-area: aside;
+}
+
+.section{
+  text-align: left;
+  grid-area: section;
+}
+
+.footer{
+  text-align: left;
+  grid-area: footer;
 }
 
 .grid-container {
@@ -12,13 +31,99 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, 1fr);
   gap: 10px;
+  text-align:left;
+  grid-template-rows: 0.5fr 1.5fr 1fr 0.5fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
-    'header'
-    'article'
-    'article'
-    'section'
-    'section'
-    'section'
-    'aside'
-    'footer';
+    'header header'
+    'aside article'
+    'section section'
+    'footer footer';
+} */
+
+/* grid exercise 2 */
+
+/* .header {
+  text-align: left;
+  grid-area: header;
+}
+
+.article {
+  text-align: left;
+  grid-area: article;
+}
+
+.aside{
+  text-align: left;
+  grid-area: aside;
+}
+
+.section{
+  text-align: left;
+  grid-area: section;
+}
+
+.footer{
+  text-align: left;
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  height: 97vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 10px;
+  text-align:left;
+  grid-template-rows: 0.5fr 1.5fr 1fr 0.5fr;
+  grid-template-columns: 1fr 0.5fr 2fr;
+  grid-template-areas:
+    'header header'
+    'article aside'
+    'section section'
+    'footer footer';
+} */
+
+/* grid exercise 3 */
+
+.header {
+  text-align: left;
+  grid-area: header;
+}
+
+.article {
+  text-align: left;
+  grid-area: article;
+}
+
+.aside{
+  text-align: left;
+  grid-area: aside;
+}
+
+.section{
+  text-align: left;
+  grid-area: section;
+}
+
+.footer{
+  text-align: left;
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  height: 97vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 10px;
+  text-align:left;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr 0.5fr;
+  grid-template-columns: 1fr 0.5fr 2fr;
+  grid-template-areas:
+    'header header'
+    'article article'
+    'section section'
+    'aside aside'
+    'footer footer';
 }
