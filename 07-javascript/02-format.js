@@ -1,6 +1,15 @@
 const formatItems = (input) => {
   // return a string of the concatenated numbers, separated by commas and with three digits after the decimal point
-
+  let newString = "";
+  for (let i = 0; i < input.length; i++){
+    // newString = input + "," + input[i];
+    if (i == 0){
+      newString += input[i];
+    }else{
+      newString += `, ${input[i]}`;
+    }
+  }
+  input = newString;
   // for reference, see the MDN Number page:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 
